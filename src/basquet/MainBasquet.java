@@ -2,6 +2,8 @@ package basquet;
 
 import Utilidades.Fichero;
 import static basquet.Entrada.pedirCadena;
+import static basquet.Entrada.pedirEntero;
+import static basquet.Entrada.pedirFechaCreacion;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
