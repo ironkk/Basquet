@@ -1,37 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package basquet;
+
 /**
- * Created by User on 06/11/2016.
+ *
+ * @author ironkk
  */
 
+// CLASE FALLIDA! 
 public class EstadisticasPosicion {
 
- 
-    private String position;
+    private String posicion;
     private double avgBaskets;
-    private int minBaskets;
-    private int maxBaskets;
+    private double avgAsistencias;
 
-    public EstadisticasPosicion(String position, double avgBaskets, int minBaskets, int maxBaskets) {
-        this.position = position;
+    public EstadisticasPosicion(String posicion, double avgBaskets, double avgAsistencias) {
+        this.posicion = posicion;
         this.avgBaskets = avgBaskets;
-        this.minBaskets = minBaskets;
-        this.maxBaskets = maxBaskets;
+        this.avgAsistencias = avgAsistencias;
     }
 
-    public String getPosition() {
-        return position;
+    public String getPosicion() {
+        return posicion;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
-
-
 
     public double getAvgBaskets() {
         return avgBaskets;
@@ -41,23 +34,15 @@ public class EstadisticasPosicion {
         this.avgBaskets = avgBaskets;
     }
 
-    public int getMinBaskets() {
-        return minBaskets;
+    public double getAvgAsistencias() {
+        return avgAsistencias;
     }
 
-    public void setMinBaskets(int minBaskets) {
-        this.minBaskets = minBaskets;
+    public void setAvgAsistencias(double avgAsistencias) {
+        this.avgAsistencias = avgAsistencias;
     }
 
-    public int getMaxBaskets() {
-        return maxBaskets;
-    }
-
-    public void setMaxBaskets(int maxBaskets) {
-        this.maxBaskets = maxBaskets;
-    }
 }
-
 
 // GET --> AVG BASKETS, ASSISTS, REBOUND FROM ALL PLAYERS SAME POSITION
 

@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package basquet;
+package Utilidades;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
 import java.util.Date;
 
 /**
  *
- * @author dam
+ * @author ironkk
  */
 public class Entrada {
     public static int pedirEntero(String texto) {
@@ -29,7 +28,8 @@ public class Entrada {
                 System.out.println("Error de entrada / salida.");
                 error = true;
             }
-        } while (error);   
+        } while (error);
+        System.out.println("");
         return num;
     }
     
@@ -47,18 +47,36 @@ public class Entrada {
                 System.out.println("Error de entrada / salida.");
             }
         } while (cadena.equals(""));
+        System.out.println("");
         return cadena;
     }
   
-   public static Date pedirFechaCreacion() {
+   public static Date pedirFechaCreacion(String texto) {
         int cadena1 =0;
         int cadena2 =0;
         int cadena3 = 0;
         do {
          
-                cadena1 = pedirEntero("¿Año de creación?: ");
+                cadena1 = pedirEntero("¿Día de creación?: ");
                  cadena2 = pedirEntero("¿Mes de creación?: ");
-                  cadena1 = pedirEntero("Día de creación?: ");
+                  cadena1 = pedirEntero("¿Año de creación?: ");
+           
+    
+        } while (cadena1 > 0 && cadena2 > 0 && cadena3 > 0);
+      Date fechaCreada = new Date(cadena1, cadena2, cadena3);
+      return fechaCreada;
+      
+    }
+   
+   public static Date pedirFechaNacimiento(String texto) {
+        int cadena1 =0;
+        int cadena2 =0;
+        int cadena3 = 0;
+        do {
+         
+                cadena1 = pedirEntero("¿Día de nacimiento?: ");
+                 cadena2 = pedirEntero("¿Mes de nacimiento?: ");
+                  cadena1 = pedirEntero("¿Año de nacimiento?: ");
            
     
         } while (cadena1 > 0 && cadena2 > 0 && cadena3 > 0);

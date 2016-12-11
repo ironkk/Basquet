@@ -1,35 +1,29 @@
 package basquet;
 
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author dam
+ * @author ironkk
  */
 public class Equipo {
-  
+
     private int id;
 
     private static int numEquipos = 0;
-    
-    public int getId() {
-        return id;
-    }
-    
+
     private String nombre;
 
     private String localidad;
 
     private Date fechaCreacion;
+    private List<Jugador> Jugadores;
+
+    public int getId() {
+        return id;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -37,9 +31,6 @@ public class Equipo {
 
     public Equipo() {
     }
-    
-    
-        private List<Jugador> Jugadores;
 
     public List<Jugador> getJugadores() {
         return Jugadores;
@@ -49,7 +40,6 @@ public class Equipo {
         this.Jugadores = Jugadores;
     }
 
-
     public Equipo(String nombre, String localidad, Date fechaCreacion) {
         numEquipos++;
         this.id = numEquipos;
@@ -58,8 +48,6 @@ public class Equipo {
         this.fechaCreacion = fechaCreacion;
         Jugadores = new ArrayList<>();
     }
-    
-    
 
     public Date getFechaCreacion() {
         return fechaCreacion;
@@ -85,11 +73,15 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    public String toString() {
-        return "Equipo{" + "nombre=" + nombre + '}';
+    public void altaJugadores(Jugador j) {
+        Jugadores.add(j);
     }
 
+    @Override
+    public String toString() {
+        return "Equipo{" + "id=" + id + ", nombre=" + nombre + ", localidad=" + localidad + ", fechaCreacion=" + fechaCreacion + ", Jugadores=" + Jugadores + '}';
+    }
 
-    
   
+
 }

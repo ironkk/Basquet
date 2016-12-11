@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Utilidades;
 
-/**
- *
- * @author dam
- */
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.File;
@@ -18,7 +9,7 @@ import java.io.FileOutputStream;
 
 /**
  *
- * @author stucom
+ * @author ironkk
  */
 public class Fichero {
 
@@ -37,7 +28,6 @@ public class Fichero {
             codificador.close();
         } catch (FileNotFoundException ex) {
             System.out.println("Error al escribir " + ex.getMessage());
-//            ex.printStackTrace();
         }
     }
 

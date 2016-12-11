@@ -1,14 +1,7 @@
 package basquet;
 
-
-import java.time.LocalDate;
 import java.util.Date;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author ironkk
@@ -24,9 +17,10 @@ public class Jugador {
     private int rebotes;
 
     private String posicion;
-    
 
     private static int contador;
+
+    private Date nacimiento;
 
     public Jugador(Date nacimiento, String nombre) {
         contador++;
@@ -34,16 +28,19 @@ public class Jugador {
         this.nacimiento = nacimiento;
         this.nombre = nombre;
     }
-    
 
-    public Jugador(int canastas, int asistencias, int rebotes, String posicion, Date nacimiento, String nombre) {
-        this(nacimiento, nombre);
+    public Jugador(String nombre, Date fechaNacimiento, String posicion, int canastas, int asistencias, int rebotes) {
+        this(fechaNacimiento, nombre);
         this.canastas = canastas;
         this.asistencias = asistencias;
         this.rebotes = rebotes;
         this.posicion = posicion;
         this.nacimiento = nacimiento;
         this.nombre = nombre;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
@@ -53,9 +50,6 @@ public class Jugador {
     public Jugador() {
     }
 
-
-    
-    
     public String getPosicion() {
         return posicion;
     }
@@ -88,8 +82,6 @@ public class Jugador {
         this.canastas = canastas;
     }
 
-    private Date nacimiento;
-
     public Date getNacimiento() {
         return nacimiento;
     }
@@ -108,11 +100,10 @@ public class Jugador {
         this.nombre = nombre;
     }
 
-    public int getId() {
-        return id;
+    @Override
+    public String toString() {
+        return "Jugador{" + "id=" + id + ", canastas=" + canastas + ", asistencias=" + asistencias + ", rebotes=" + rebotes + ", posicion=" + posicion + ", nacimiento=" + nacimiento + ", nombre=" + nombre + '}';
     }
- 
-    
-    
 
+    
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_111" class="java.beans.XMLDecoder">
+ <object class="basquet.ListaEquipos" id="ListaEquipos0">
+  <void property="lista">
+   <void method="add">
+    <object class="basquet.Equipo">
+     <void property="fechaCreacion">
+      <object class="java.util.Date">
+       <long>60862744800000</long>
+      </object>
+     </void>
+     <void property="id">
+      <int>3</int>
+     </void>
+     <void property="jugadores">
+      <object class="java.util.ArrayList">
+       <void method="add">
+        <object class="basquet.Jugador">
+         <void property="asistencias">
+          <int>7</int>
+         </void>
+         <void property="id">
+          <int>5</int>
+         </void>
+         <void property="nacimiento">
+          <object class="java.util.Date">
+           <long>60775916400000</long>
+          </object>
+         </void>
+         <void property="nombre">
+          <string>Javier</string>
+         </void>
+         <void property="posicion">
+          <string>pivote</string>
+         </void>
+         <void property="rebotes">
+          <int>4</int>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+     <void property="localidad">
+      <string>barcelona</string>
+     </void>
+     <void property="nombre">
+      <string>FCB</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="basquet.Equipo">
+     <void property="fechaCreacion">
+      <object class="java.util.Date">
+       <long>60807538800000</long>
+      </object>
+     </void>
+     <void property="id">
+      <int>3</int>
+     </void>
+     <void property="jugadores">
+      <object class="java.util.ArrayList">
+       <void method="add">
+        <object class="basquet.Jugador">
+         <void property="asistencias">
+          <int>2</int>
+         </void>
+         <void property="id">
+          <int>5</int>
+         </void>
+         <void property="nacimiento">
+          <object class="java.util.Date">
+           <long>60670764000000</long>
+          </object>
+         </void>
+         <void property="nombre">
+          <string>Marc</string>
+         </void>
+         <void property="posicion">
+          <string>alero</string>
+         </void>
+         <void property="rebotes">
+          <int>4</int>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+     <void property="localidad">
+      <string>Madrid</string>
+     </void>
+     <void property="nombre">
+      <string>RMD</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
